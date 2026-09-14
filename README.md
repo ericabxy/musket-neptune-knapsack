@@ -4,8 +4,8 @@ _Musket, Neptune, Knapsack_ is an m,n,k-game written in React + Vite to demonstr
 
 ## Resources
 
-https://react.dev/learn/tutorial-tic-tac-toe
+- [Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
 
 ## Attribution
 
-["Public Pixel Font"](https://opengameart.org/content/public-pixel-font) by [GGBotNet](https://ggbot.net/).
+- ["Public Pixel Font"](https://opengameart.org/content/public-pixel-font) by [GGBotNet](https://ggbot.net/).
