@@ -42,6 +42,7 @@ function Game (props) {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className='game-history'>
+        <div>Move History</div>
         <ol>{moves}</ol>
       </div>
     </div>
