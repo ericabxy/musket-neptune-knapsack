@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 /* Child components. */
-import Board from './Board'
+import Board3D from './Board3D'
 
-function Game (props) {
-  const [history, setHistory] = useState([Array(9).fill(null)])
+function Game3D (props) {
+  const [history, setHistory] = useState([Array(64).fill(null)])
   const [currentMove, setCurrentMove] = useState(0)
   const xIsNext = currentMove % 2 === 0
   const currentSquares = history[currentMove]
@@ -38,8 +38,9 @@ function Game (props) {
   /* Component markup. */
   return (
     <div className='game'>
-      <div className='game-board'>
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+      {/*<div>Δ⬚∆S⌂☐☓</div>*/}
+      <div className='game-board game-board--3d'>
+        <Board3D xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className='game-history'>
         <div>Move History</div>
@@ -49,4 +50,4 @@ function Game (props) {
   )
 }
 
-export default Game
+export default Game3D
